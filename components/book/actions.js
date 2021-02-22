@@ -16,7 +16,7 @@ const deleteBook = (req, res) => {
     if (error) {
       res.status(500).send(error)
     } else {
-      res.status(204)
+      res.status(200).send("book deleted successfully")
     }
   })
 }

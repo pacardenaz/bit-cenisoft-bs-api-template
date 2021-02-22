@@ -12,10 +12,10 @@ router.get('/', getBooks)
 router.get('/:id', getBook)
 
 // POST Create a Book
-router.post('/', coverUploader.single('cover'), setCover, createBook)
+router.post('/', /*coverUploader.single('cover'), setCover,*/ createBook)
 
 // PUT Update a Book's info
-router.put('/:id', coverUploader.single('cover'), setCover, updateBook)
+router.put('/:id', /*coverUploader.single('cover'), setCover,*/ updateBook)
 
 // DELETE by ID
 router.delete('/:id', deleteBook)
